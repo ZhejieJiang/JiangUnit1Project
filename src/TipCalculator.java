@@ -22,7 +22,7 @@ public class TipCalculator
         int people = scan.nextInt();
 
         //rest of them
-        double totalBillPlusTip =  Math.round( ((1 + tip/100.0) * totalBill) * 100.0) / 100.0;
+        double totalBillPlusTip =  Math.round(((1 + tip/100.0) * totalBill) * 100.0) / 100.0;
         double totalTip = Math.round((totalBillPlusTip - totalBill) * 100.0) /100.0;
         double totalPerPerson = Math.round((totalBillPlusTip/people) * 100.0) / 100.0;
         double tipPerPerson = Math.round((totalTip/people) * 100.0) / 100.0;
