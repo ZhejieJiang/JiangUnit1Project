@@ -21,7 +21,7 @@ public class TipCalculator
         System.out.print("How many people is paying? ");
         int people = scan.nextInt();
 
-        //rest of them
+        //rest of them, Math.round = Rounding
         double totalBillPlusTip =  Math.round(((1 + tip/100.0) * totalBill) * 100.0) / 100.0;
         double totalTip = Math.round((totalBillPlusTip - totalBill) * 100.0) /100.0;
         double totalPerPerson = Math.round((totalBillPlusTip/people) * 100.0) / 100.0;
